@@ -1,0 +1,105 @@
+/* Article layout */
+
+#article_hero {
+	height: 373px;
+	width: 100%;
+}
+
+#article_hero .hero_img {
+	margin: 0 auto;
+	width: 592px;
+}
+
+#article_quote {
+	background-color: #dadada;
+	min-height: 118px;
+	padding: 10px 30px;
+}
+
+#article_quote .quote {
+	font-weight: bold;
+	font-size: 32px;
+}
+
+#article_quote .quoter {
+	font-size: 32px;
+	font-style: italic;
+	text-align: right;
+}
+
+#article_body {
+	padding: 0 10px;
+}
+
+
+// Profile/Goals styles
+
+body#goals {
+	color: #fff;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+#goals .ui-overlay-c, #goals .ui-body-c {
+	background: #0088d0;
+	color: #fff;
+	text-shadow: none;
+}
+
+#goals .ui-mobile [data-role=page].container, .ui-page.container {
+	width: 98%;
+	padding: 0 1%;
+}
+
+.goal_chart {
+	float: left;
+	height: 300px;
+	min-width: 300px;
+	padding: 15px 0;
+	width: 100%;
+}
+
+#goal_chart {
+	margin: 0 auto;
+	width: 300px;
+}
+
+.goal_form {
+	width: 97%;
+	padding: 0 3% 0 0; 
+}
+
+.goal_form input.ui-input-text.ui-slider-input { display: none; }
+
+.goal_form .controls {
+	float: left;
+	min-width: 300px;
+	width: 100%;
+}
+
+.goal_form .controls input.ui-input-text.ui-slider-input {
+	display: none;
+}
+/*GOALS CONTAINER*/
+#goals .container{
+	width: 100%;
+	padding: 0;
+}
+#goals h1, p, .controls{
+	width: 90%;
+	padding: 0 5%;
+}
+.save-submit{
+	background: url(../img/save-and-continue.png);
+	background-size: 249px auto;
+	width: 249px;
+	display: block;
+	margin: 20px auto;
+	height: 59px;
+	background-repeat:no-repeat;
+	
+}
+#goals .ui-content{
+	padding: 0;
+}

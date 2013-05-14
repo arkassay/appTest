@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A higher level of productivity</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/stylev2.css" />
+		<link rel="stylesheet" href="css/styles_bcm.css" />
+		
+	</head>
+	<body>
+		<div class="fixedMenus">
+			<div class="menuTop">
+				<a href="#menu" class="header-icon ui-btn-left"></a>
+				<a href="#profile" class="header-icon ui-btn-right" class="profileIcon"></a>
+			</div>
+			<div class="menuBottom">
+				<div class="footerMenu one">
+					<a href="#" class="staricon"></a>
+					<a href="#" class="categoryicon extended"></a>
+					<a href="#" class="archiveicon"></a>
+				</div>
+			</div>
+		</div>
+		<div id="articles" class="reqAuth page">
+			<div class="header">
+				<div class="headerBg"></div>
+			</div>
+			<div data-role="content" class="articlesContent">
+				<!-- Hero image -->
+				<div id="article_hero">
+					<div class="hero_img"><img src="img/articles_branson_shadow.png" width="320px"/></div>
+				</div>
+				<!-- Quote -->
+				<div id="article_quote">
+					<div class="quote">A higher level of productivity.</div>
+					<div class="quoter">-Richard Branson</div>
+				</div>
+				<!-- Body -->
+				<div id="article_body">
+					<p>There are lots of different names for entrepreneurs and various takes on what the word really means. Lots of you had your own views on what the definition of entrepreneur should be when I blogged on the topic last year.</p>
+					<p>One rather old but very relevant definition I came across recently is by the French economist Jean-Baptiste Say. In 1803 he said an entrepreneur “shifts economic resources out of an area of lower and into an area of higher productivity and greater yield”.</p>
+					<p>More than 200 years later the definition rings true. Entrepreneurs identify areas that are under-performing and are ripe for disruption. They go in, shake up the market and increase productivity.</p>
+					<p>Bacon ipsum dolor sit amet pork loin ground round biltong, jowl fatback bresaola tail hamburger prosciutto shankle. Kielbasa biltong hamburger, swine chuck leberkas frankfurter ham hock filet mignon pork belly tongue short loin. Flank tenderloin strip steak jerky bresaola. Salami pork loin swine pig, tenderloin meatball ground round biltong bacon brisket ham hock ribeye.</p>
+					<p>Shoulder spare ribs prosciutto pork belly. Ham pork loin turkey filet mignon short ribs strip steak bacon salami meatloaf. Salami brisket meatball drumstick. Sausage turkey sirloin spare ribs doner corned beef kielbasa venison tri-tip chicken bacon beef capicola meatloaf. Tail shank sausage capicola jerky strip steak drumstick tenderloin prosciutto salami andouille jowl cow ground round tri-tip.</p>
+				</div>
+			
+			</div>
+				
+		</div><!--end #profile-->
+		<div class="overlay">
+			<div class="overlayContent">
+				
+				<ul>
+					<li><a class="mm-conversations mm-link" href="conversations.html"></a></li>
+					<li><a class="mm-articles mm-link" href="articles.html"></a></li>
+					<li><a class="mm-events mm-link" href="events.html"></a></li>
+				</ul>
+			</div><!--end .overlayContent-->
+		</div><!--end .overlay-->
+		
+		
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script>
+			$.getJSON('articleSingle.json', function(data) {
+			  listArticles(data);
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/stylev2.css" />
+	</head>
+	<body>
+		<div class="fixedMenus">
+			<div class="menuTop">
+				<a href="#menu" class="header-icon ui-btn-left"></a>
+				<a href="#profile" class="header-icon ui-btn-right" class="profileIcon"></a>
+			</div>
+			<div class="menuBottom">
+				<div class="footerMenu one">
+					<a href="#" class="staricon"></a>
+					<a href="#" class="categoryicon extended"></a>
+					<a href="#" class="archiveicon"></a>
+				</div>
+			</div>
+		</div>
+		<div id="profile_">
+			<div id="profile-text">PROFILE</div>
+			
+			
+				<div id="pi-nav">
+					<div id="p1" class='p-nav'></div>
+					<div id="p2" class='p-nav'></div>
+					<div id="p3" class='p-nav'></div>
+					<div id="p4" class='p-nav'></div>
+					<div id="p5" class='p-nav'></div>
+				</div>
+				<div id="profile-info_">
+				<div id="pi-content">
+					<div id="pi-image"></div>
+				</div>
+			</div>
+			<div id="profile-bg"></div>
+		</div>
+		<div id="articles" class="reqAuth page">
+			<div class="header">
+				<div class="headerBg"></div>
+			</div>
+			<div data-role="content" class="articlesContent">
+			</div>
+				
+		</div><!--end #profile-->
+		<div class="overlay one">
+			<div class="overlayContent">
+				<ul>
+					<li><a class="mm-conversations mm-link" href="conversations.html"></a></li>
+					<li><a class="mm-articles mm-link" href="articles.html"></a></li>
+					<li><a class="mm-events mm-link" href="events.html"></a></li>
+				</ul>
+			</div><!--end .overlayContent-->
+		</div><!--end .overlay-->
+		<div class="overlay two">
+			<div class="overlayContent">
+				<a href="#" class="instructions1"><img src="img/instructions-star-items.png" width="286px" /></a>
+				<a href="#" class="instructions2"><img src="img/instructions-archive-items.png" width="286px" /></a>
+			</div><!--end .overlayContent-->
+		</div><!--end .overlay.two-->
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script src="js/swipe.js"></script>
+		<script>
+			
+			$.getJSON('articles.json', function(data) {
+			  listArticles(data);
+			  new Swipe( '#article0_', '#article0' );
+			  new Swipe( '#article1_', '#article1' );
+			  new Swipe( '#article2_', '#article2' );
+			  new Swipe( '#article3_', '#article3' );
+			  new Swipe( '#article4_', '#article4' );
+			  new Swipe( '#article5_', '#article5' );
+			  new Swipe( '#article6_', '#article6' );
+			  new Swipe( '#article7_', '#article7' );
+			});
+			
+			$(function(){
+				openInfoOverlay();
+			})
+		</script>
+	</body>
+</html>

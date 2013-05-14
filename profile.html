@@ -1,0 +1,91 @@
+<html>
+	<head>
+		<title>Your Goals</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.3.1.min.js"></script>
+		<script type="text/javascript" src="js/goalChart.js"></script>
+		<script type="text/javascript" src="js/radar.js"></script>
+		
+		
+		<!-- Styles -->
+		<link type="text/css" rel="stylesheet" href="css/jquery.mobile-1.3.1.min.css" />
+		<link type="text/css" rel="stylesheet" href="css/styles_bcm.css" />
+		
+	</head>
+	<body id="goals">
+	
+		<div class="container" data-role="page">
+		<div data-role="content">
+			<h1>Your Goals</h1>
+		
+			<p>Your success as a well-rounded professional (and person) is made of many different things. We've highlighted some key areas we think we all need to master in order to achieve our career and life goals.</p>
+
+			<p>The sliders below will help you indicate which areas important to your personal and professional development (you can weight the categories in order to provide more or less intense focus on one area). We'll use this info to recommend content to you, and to match you with members who have a similar focus and whose goals complement yours. </p>
+		
+			<div class="goal_chart">
+				<div id="goal_chart"></div>
+			</div>
+			
+			<div class="controls">
+				<h4>What's most important to you?</h4>
+				<form id="controlForm" class="goal_form">
+					<div>
+						<label for="axis0-input" id="label-axis0"><a href="#careerTip" data-theme="a" data-icon="info" data-iconpos="notext" data-rel="popup" data-mini="true" data-inline="true" id="cpop">?</a> Career: </label>
+						<input class="ipt_slider" type="range" name="axis0-input" id="axis0-input" value="50" min="0" max="100" data-highlight="true" data-theme="a" />
+					</div>
+					<div>
+						<label for="axis1-input" id="label-axis1"><a href="#softTip" data-theme="a" data-icon="info" data-iconpos="notext" data-rel="popup" data-mini="true" data-inline="true" id="spop">?</a> Soft skills:</label>
+						<input class="ipt_slider" type="range" name="axis1-input" id="axis1-input" value="50" min="0" max="100" data-highlight="true" data-theme="a" />
+					</div>
+					<div>
+						<label for="axis2-input" id="label-axis2"><a href="#hardTip" data-theme="a" data-icon="info" data-iconpos="notext" data-rel="popup" data-mini="true" data-inline="true" id="hpop">?</a> Hard skills:</label>
+						<input class="ipt_slider" type="range" name="axis2-input" id="axis2-input" value="50" min="0" max="100" data-highlight="true" data-theme="a" />
+					</div>
+					<div>
+						<label for="axis3-input" id="label-axis3"><a href="#workLifeTip" data-theme="a" data-icon="info" data-iconpos="notext" data-rel="popup" data-mini="true" data-inline="true" id="wlpop">?</a> Work-life balance:</label>
+						<input class="ipt_slider" type="range" name="axis3-input" id="axis3-input" value="50" min="0" max="100" data-highlight="true" data-theme="a" />
+					</div>
+					<div>
+						<label for="axis4-input" id="label-axis4"><a href="#entreTip" data-theme="a" data-icon="info" data-iconpos="notext" data-rel="popup" data-mini="true" data-inline="true" id="epop">?</a> Entrepreneurship:</label>
+						<input class="ipt_slider" type="range" name="axis4-input" id="axis4-input" value="50" min="0" max="100" data-highlight="true" data-theme="a" />
+					</div>
+				</form>
+			</div>
+			<a href="connections.html" class="save-submit"></a>
+			<div style="clear:both;"></div>
+			
+			<div id="careerTip" data-role="popup" data-theme="b">
+				<p><strong>Career</strong></p>
+				<p>The career category covers topics that lean toward career advancement - and how to operate in your role once you start rising through the ranks. (ex: Promotions, Salary Negotiation, Team Management, Networking)</p>
+			</div>
+			<div id="softTip" data-role="popup" data-theme="b">
+				<p><strong>Soft Skills</strong></p>
+				<p>It's not enough to be an expert in finance, programming or some other specific industry. We need to continue to develop our soft skills - behavioral , emotional and attitudinal skills that help us relate to people and the work.  (ex: Collaboration, Work Ethic, Flexibility, Problem Solving)</p>
+			</div>
+			<div id="hardTip" data-role="popup" data-theme="b">
+				<p><strong>Hard Skills</strong></p>
+				<p>We all have our expertise, whether it's marketing, finance, or plumbing. But embedded in most careers are an array of other hard skills we need to develop and maintain. (ex: Proficiency with Software, Typing, Written/Grammatical Skills)</p>
+			</div>
+			<div id="workLifeTip" data-role="popup" data-theme="b">
+				<p><strong>Work-Life Balance</strong></p>
+				<p>Are you a mother? A professional? Both? Do you dabble in outside projects or pro-bono work? Finding the right balance between working, family, and fostering your interests (and health and well-being!) is one of the top challenges women face. (ex: Family, Health, Finance Management, Balancing Work and Play)</p>
+			</div>
+			<div id="entreTip" data-role="popup" data-theme="b">
+				<p><strong>Entrepreneurship</strong></p>
+				<p>An entrepreneur is someone who starts a business. But we also think they are regular people who are self starters. Being an entrepreneur is about putting yourself out there and getting noticed, and it's about asking and getting what you need to do what you want - whether it's for the small (or large!) business you start, or the working-mothers meet up  you organize for your community. (ex: Getting Noticed, Starting a Business, Fundraising, Investing)</p>
+			</div>
+		</div>
+	</div>
+		<script type="text/javascript">
+		$(function() {
+			initGoals();
+			initGoalForm();
+		});
+		</script>
+	
+	</body>
+</html>

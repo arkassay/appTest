@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/conversations.css" />
+		
+	</head>
+	<body>
+		<div class="fixedMenus">
+			<div class="menuTop">
+				<a href="#menu" class="header-icon ui-btn-left"></a>
+				<a href="#profile" class="header-icon ui-btn-right" class="profileIcon"></a>
+			</div>
+			<div class="menuBottom">
+				<div class="footerMenu one">
+					<a href="#" class="staricon"></a>
+					<a href="#" class="categoryicon extended"></a>
+					<a href="#" class="archiveicon"></a>
+				</div>
+			</div>
+		</div>
+		<div id="articles" class="reqAuth page">
+			<div class="header">
+				<div class="headerBg"></div>
+			</div>
+			<h3>Join the Conversation</h3>
+			<div data-role="content" class="articlesContent convoContent">
+			</div>
+				
+		</div><!--end #profile-->
+		<div class="overlay">
+			<div class="overlayContent">
+				
+				<ul>
+					<li><a class="mm-conversations mm-link" href="conversations.html"></a></li>
+					<li><a class="mm-articles mm-link" href="articles.html"></a></li>
+					<li><a class="mm-events mm-link" href="events.html"></a></li>
+				</ul>
+			</div><!--end .overlayContent-->
+		</div><!--end .overlay-->
+		
+		
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/conversations.js"></script>
+		<script src="js/swipe.js"></script>
+		
+		<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+		  api_key: mzi3e3s0dojy
+		  onLoad: onLinkedInLoad
+		  authorize: true
+		  scope: r_basicprofile r_emailaddress r_network rw_groups
+		</script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/stylev2.css" />
+		
+	</head>
+	<body>
+		
+		<div id="createProfile" class="reqAuth page">
+			<div data-role="content" class="articlesContent">
+				<div id="profile">
+					
+				</div>
+			</div>
+		</div><!--end #profile-->
+		
+	
+		
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/scripts.js"></script>
+		<script type="text/javascript" src="http://platform.linkedin.com/in.js">
+		  api_key: mzi3e3s0dojy
+		  authorize: true
+		  scope: r_basicprofile r_emailaddress r_network rw_groups
+		</script>
+		<script>
+			IN.Event.on(IN, "auth", function(){
+				IN.API.Profile("me").result(displayProfiles);
+			});
+			
+		</script>
+	</body>
+</html>

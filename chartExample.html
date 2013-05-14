@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Chart Example</title>		
+
+		<!-- Styles -->
+		<link type="text/css" rel="stylesheet" href="css/styles_bcm.css" />
+	</head>
+	<body style="background-color: magenta;">
+		<!-- Container for Chart -->
+		<div class="goal_chart">
+			<div id="goal_chart"></div>
+		</div>
+		
+		<!-- JavaScript -->
+		<script type="text/javascript" src="js/d3.v3.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/goalChart.js"></script>
+		<script type="text/javascript" src="js/radar.js"></script>
+		<script type="text/javascript">
+		$(function() {
+			initGoals();
+		});
+		</script>
+	</body>
+</html>

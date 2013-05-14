@@ -1,0 +1,472 @@
+/*SPLASH PAGE*/
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+ul{
+	margin: 0px;
+	padding: 0px;
+}
+.page{
+	width: 100%;
+	height: 100%;
+	position:absolute;
+	top: 0;
+	left: 0;
+}
+#home{
+	background: url(../img/splashbg.jpg) no-repeat;
+	background-size: 100% auto;
+	max-width: 640px;
+	padding-top: 245px;
+	min-height: 480px;
+}
+.LinkedInButton{
+	cursor:pointer;
+	height: 56px;
+	background: url(../img/sprite-btn.png);
+	background-position :  top left;
+	background-repeat : no-repeat ;
+	padding: 0;
+	margin: 0 auto 144px auto;
+	display:block;
+	width: 245px;
+	background-size: 245px auto;
+	position:relative;
+	z-index: 999999;
+}
+.signUpLink{
+	color: white;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 10pt;
+	text-align:center;
+	width: 100%;
+	text-shadow: 0 0 0;
+	font-weight: normal;
+	display:block;
+}
+
+/*HEADER STYLES*/
+.header{
+	height: 62px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+}
+.headerBg{
+	background: #0088d0 url(../img/headerbg.png) no-repeat center;
+	background-size: auto 62px;
+	height: 62px;
+	width: 100%;
+	position:relative;
+	z-index: 0;
+}
+.header-icon{
+	position:relative;
+	z-index: 1;
+	top: -62px;
+}
+#fixedMenus{
+	position:fixed;
+	top: 0;
+	left: 0;
+	background: none;
+	
+}
+.profileIcon img{
+	width: 42px;
+	height: 42px;
+}
+.ui-btn-left, .ui-btn-right{
+	padding: 0;
+	top: 9px;
+	position:fixed;
+	z-index: 99999;
+}
+.ui-btn-left{
+	left: 3%;
+	width: 42px;
+	height: 42px;
+	background: url(../img/menu-btn.png);
+	background-size: 42px auto;
+}
+.ui-btn-left.shadow{
+	background: url(../img/menu-btn-shadow.png);
+	background-size: 42px auto;
+}
+.ui-btn-right{
+	right: 3%;
+	position: fixed;
+	width: 42px;
+	height: 42px;
+	background: url(../img/profile-btn.png);
+	background-size: 42px auto;
+}
+.ui-btn-right.shadow{
+	background: url(../img/profile-btn-shadow.png);
+	background-size: 42px auto;
+}
+
+/*FOOTER MENU STYLES*/
+.footerMenu{
+	position:fixed;
+	bottom: 10px;
+	height: 48px;
+	width: 96%;
+	left: 2%;
+	right: 2%;
+	z-index: 99999;
+}
+.footerMenu.two, .footerMenu.three{
+	display:none;
+}
+.staricon{
+	background: url(../img/read-btn.png) no-repeat;
+	background-size: 48px auto;
+	width: 48px;
+	height: 48px;
+	position:relative;
+	float:left;
+}
+.staricon.extended{
+	background: url(../img/starred-articles.png) no-repeat;
+	background-size: 208px auto;
+	width: 208px;
+	height: 48px;
+	position:relative;
+	float:left
+}
+.categoryicon{
+	background: url(../img/drop-down-btn.png) no-repeat;
+	background-size: 48px auto;
+	width: 48px;
+	height: 48px;
+	position:relative;
+	float:left;
+}
+.categoryicon.extended{
+	background: url(../img/middle-bar-articles.png) no-repeat;
+	background-size: 208px auto;
+	width: 208px;
+	height: 48px;
+	position:relative;
+	float:left
+}
+
+.archiveicon{
+	background: url(../img/archive-btn.png) no-repeat;
+	background-size: 48px auto;
+	width: 48px;
+	height: 48px;
+	position:relative;
+	float:right;
+}
+.archiveicon.extended{
+	background: url(../img/archived-articles.png) no-repeat;
+	background-size: 208px auto;
+	width: 208px;
+	height: 48px;
+	position:relative;
+	float:left
+}
+/*MAIN MENU OVERLAY STYLES*/
+.overlay{
+	position:fixed;
+	background: rgba(0,0,0,.9);
+	display:none;
+	z-index: 99;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+.overlay ul{
+	margin: 40px 0 0 0;
+	padding: 0;
+}
+.mm-link{
+	display:block;
+	margin:0 auto 0px auto;
+	width: 296px;
+	background-repeat:no-repeat;
+}
+.mm-conversations{
+	background: url(../img/mm-conversations.png);
+	background-size: 296px auto;
+	height: 71px;
+}
+.mm-events{
+	background: url(../img/mm-events.png);
+	background-size: 296px auto;
+	height: 85px;
+}
+.mm-articles{
+	background: url(../img/mm-articles.png);
+	background-size: 296px auto;
+	height: 70px;
+}
+
+/*OVERLAY INSTRUCTIONS*/
+.instructions2, .instructions1{
+	position: relative;
+	display: block;
+	width: 286px;
+	margin: 0 auto;
+	top: 60px;
+}
+.instructions2{
+	display:none;
+}
+
+/*ARTICLES PAGE*/
+.articlesContent{
+	position:relative;
+}
+.articlesList{
+	padding: 0;
+	margin: 0;
+}
+.articlesList.two, .articlesList.three{
+	display: none;
+}
+.articlesList li{
+	width: 100%;
+	position:relative;
+	min-height: 200px;
+	display:block;
+	max-height: 250px;
+	overflow:hidden;
+}
+.articlesList img{
+	width: 100%;
+	position:absolute;
+	z-index: 0;
+	height: auto;
+}
+.swipe .articleInfo{
+	background: rgba(0,0,0,.7);
+	padding: 15px 5% 20px;
+	width: 90%;
+	color: white;
+	bottom: 0;
+	z-index: 1;
+	position: absolute;
+	font-size: 12px;
+	line-height: 1.3;
+	bottom: 0;
+	font-style:italic;
+	margin: 0;
+	text-align: left;
+	font-weight: 300;
+}
+.articleInfo p{
+	padding: 0;
+	margin: 0;
+}
+.articleTitle{
+	font-weight: bold;
+	line-height: 1.4;
+	font-size: 14px;
+}
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li{
+	padding: 0;
+}
+/*ARTICLES SWIPE FUNCTIONALITY STYLES*/
+        	.swipe {
+        		width: 320px;
+        		height: 200px;
+        		background-color: green;
+  position:relative;
+  z-index:1;
+}
+.swipe li div, .swipe div div div {
+  margin:0 10px;
+  /*padding:50px 10px;*/
+ padding: 0px 0px;
+  /*background:#1db1ff;*/
+  font-weight:bold;
+  color:#fff;
+  font-size:20px;
+  text-align:center;
+}
+			.article {
+				width: 320px;
+				height: 200px;
+				/*background-color: #ff0000;*/
+			}
+			
+			.icon-star {
+				width: 63px;
+				height: 60px;
+				position: absolute;
+				right: 30px;
+				top: 20px;
+				background-size: 100% auto;
+				background-image: url( '../img/star.png' );
+				z-index: -1;
+				display: none;
+			}
+			
+			.icon-archive {
+				width: 53px;
+				height: 43px;
+				position: absolute;
+				left: 30px;
+				top: 34px;
+				background-size: 100% auto;
+				background-image: url( '../img/archive.png' );
+				z-index: -1;
+				display: none;
+			}
+			#connections{
+				width: 320px;
+				background: #0088d0;
+				min-height: 900px;
+				padding: 0px;
+				display:block;
+				float:left;
+			}
+			#connections img{
+				width: 320px;
+			}
+			.connections-h1{
+				font-size: 20px;
+				font-weight: bold;
+				color: white;
+			}
+			.connections-p{
+				font-size: 16px;
+				font-style: italic;
+				color: white;
+				margin-bottom: 30px;
+			}
+			.connectWith{
+				width: 290px;
+				margin: 10px auto;
+				height: 130px;
+				background: white;
+				display:block;
+				float:left;
+				padding: 5px;
+			}
+			.connectWith img{
+				float:left;
+				height: 120px;
+			}
+			.connectWith p{
+				float:left;
+				margin-left: 10px;
+			}
+
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) {
+	.LinkedInButton{
+		background: url(../img/sprite-btn.png) no-repeat;
+		background-position: 0 -34px;
+		background-size: 245px 100px;
+		z-index: 999;
+	}	
+}
+
+
+
+
+/*  PROFILE */
+
+#profile_ {	
+	width: 320px;
+	height: 520px;
+	position: fixed;
+	
+	left: 0px;
+	top: 0px;
+	z-index: 3;
+	opacity: 0;
+	display: none;
+}
+
+#profile-bg {
+	background-color: black;
+	opacity: .9;
+	width: inherit;
+	height: inherit;
+	
+}
+
+#profile-text {
+	color: #424242;
+	font-size: 44px;
+	position: absolute;
+	left: 10px;
+	top: 0px;
+	z-index: 10;
+}
+
+#profile-info_ {
+	width: inherit;
+	position: absolute;
+	height: 600px;
+	top: 0px;
+	left: 0px;
+	margin-top: 110px;
+	overflow: scroll;
+	z-index: 99;
+}
+
+#pi-nav {
+	width: inherit;
+	
+	height: 50px;
+	float: left;
+	position: fixed;
+	left: 0px;
+	top: 60px;
+	z-index: 99;
+}
+
+#pi-content {
+	width: inherit;
+	float: left;
+	height: 700px;
+}
+
+#pi-image {
+	width: inherit;
+	height: 538px;
+	background: url(../img/profile.jpg) no-repeat;
+	background-size: 100% auto;
+}
+
+#p1 {
+	background: url(../img/progress-down.png) no-repeat;
+}
+
+#p2 {
+	background: url(../img/goals.png) no-repeat;
+}
+
+#p3 {
+	background: url(../img/trophies.png) no-repeat;
+}
+
+#p4 {
+	background: url(../img/connect.png) no-repeat;
+}
+
+#p5 {
+	background: url(../img/settings.png) no-repeat;
+}
+
+.p-nav {
+	width: 49px;
+	height: 49px;
+	float: left;
+	display: inline;
+	background-size: 100% auto;
+	margin-left: 7px;
+	margin-right: 7px;
+	margin-top: -3px;	
+}
